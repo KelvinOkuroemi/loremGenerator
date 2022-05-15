@@ -33,11 +33,11 @@ form.addEventListener("submit", function (e) {
       .join("");
     result.innerHTML = tempText;
   }
-  
-  function copyToClipboard() {
+});
+
+function copyToClipboard() {
   let input;
   input = document.getElementById("copy").textContent;
   console.log(input)
   navigator.clipboard.writeText(input);
 }
-});
